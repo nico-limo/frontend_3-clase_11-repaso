@@ -18,7 +18,7 @@ Pokedex.jsx:
 - Tambien deberan hacer un llamado a la api para obtener los datos del pokemon seleccionado
 
 ### Ayudas y Consejos
-- Al principio solamente veras un mensaje con un fondo negro. El primer paso es obtener los datos antes de modificar el loader.
+- Al principio solamente veras un pokemon en la pokedex sin el listado, con un input y un boton que no funcionan. Te recomiendo que cuando trabajes con datos que pueden llegar o no, utilices un loader
 - Al manejar apis, es dificil saber como nos llega la data, comprueben que es lo que les llega y que necesitan
 - Los unicos datos que debera tener el pokemon son: nombre, id y sus types
 - Los unicos datos que debera tener los pokemons son: nombre y su respectiva url
