@@ -16,7 +16,13 @@ export default class App extends Component {
 
   update = (pokemon) => this.setState(pokemon)
 
-  fetchAllPokemons = `https://pokeapi.co/api/v2/pokemon?limit=50`;
+  fetchAllPokemons = `https://pokeapi.co/api/v2/pokemon?limit=50`; // URL para obtener los 50 primeros pokemons
+
+
+  // ESPACIO DE TRABAJO --> Usemos el ciclo de vida para setear los pokemons por unica vez cuando se renderiza el componente
+
+
+  // -------------------------------------------------------
 
 
   getPokemon = () => {
@@ -30,7 +36,8 @@ export default class App extends Component {
     let phrase;
     const { pokemon } = this.state;
     // Aqui hay que arreglar algo... ¿Que podra ser?
-    if (pokemon[2].length === 1) return pokemon[2][0]
+
+    if (pokemon[2].length === 1) return pokemon[2][0] // Miremos el objeto  que nos devuelve
     if (pokemon[2].length > 1) {
       for (let index = 0; index < pokemon[2].length; index++) {
         if (index === 0) phrase = pokemon[2][index]
