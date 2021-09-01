@@ -14,9 +14,8 @@ export default class Pokedex extends Component {
     // AREA DE TRABAJO --> Usemos el ciclo de vida nuevamente para setear por unica vez lo que nos llega por props el filterPokemons
 
 
-    getPokemon = (url) => {
-        // Aqui esperas obtener los datos del pokemon y luego enviarlo con la funcion updateParent
-        // Solamente necesitas el name, id y types
+    getPokemon = (pokemon) => {
+        // Aqui espero setear los datos en una funcion devuelta como prop
     }
 
 
@@ -50,7 +49,7 @@ export default class Pokedex extends Component {
                 </form>
                 <div className="pokeList">
                     {filterPokemons.map(pokemon => (
-                        <p key={pokemon.name} onClick={() => this.getPokemon(pokemon.url)} className="pokeOption">{pokemon.name}</p>
+                        <p key={pokemon.name} onClick={() => this.getPokemon(pokemon)} className="pokeOption">{pokemon.name}</p>
                     ))}
                 </div>
             </div>
